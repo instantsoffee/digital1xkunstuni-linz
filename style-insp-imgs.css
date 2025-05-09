@@ -1,0 +1,68 @@
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+nav {
+  position: absolute;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.item {
+  flex: 1;
+  min-height: 100vh;
+}
+
+.inspiration {
+  background-color: white;
+  color: black;
+}
+
+.images {
+  background-color: black;
+  color: white;
+}
+
+.title {
+  font-size: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.title-a {
+  border-top: 1px solid black;
+  padding-left: 3rem;
+}
+
+.title-b {
+  border-top: 1px solid white;
+  padding-left: 8rem;
+}
+
+.link-grid {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.link-card {
+  width: 16rem;
+  height: 20rem;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

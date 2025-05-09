@@ -1,0 +1,53 @@
+
+body {
+  color: #0022FF;
+}
+
+.wrapper {
+  height: 100vh;
+  position: relative;
+}
+
+.title {
+  font-size: 15rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav {
+  border-bottom: 1px solid #0022FF;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0022FF;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+}
+
+.ux-ui {
+  font-size: 20rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  line-height: 0.8;
+}
+
+

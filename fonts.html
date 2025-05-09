@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid Layout</title>
+  <link rel="stylesheet" href="style-fonts.css" />
+</head>
+<body>
+  <div class="layout">
+    <div class="grid">
+      <!-- Small squares (orbiting) -->
+      <div class="cell">L1</div>
+      <div class="cell">L2</div>
+      <div class="cell">L3</div>
+      <div class="cell">L4</div>
+  
+      <!-- Big square spans 3×3 -->
+      <div class="big" style="grid-column: 2 / span 3; grid-row: 2 / span 3;">FONTS<br>POOLS</div>
+  
+      <!-- More small squares -->
+      <div class="cell">L5</div>
+      <div class="cell">L6</div>
+      <div class="cell">L7</div>
+      <div class="cell">L8</div>
+  
+      <!-- Another big one spans 2×2 -->
+      <div class="big" style="grid-column: 7 / span 2; grid-row: 1 / span 2;">Free<br>fonts</div>
+  
+      <!-- More small squares -->
+      <div class="cell">L9</div>
+      <div class="cell">L10</div>
+      <div class="cell">L11</div>
+      <div class="cell">L12</div>
+    </div>
+  </div>
+</body>
+</html>
