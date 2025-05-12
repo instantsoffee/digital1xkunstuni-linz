@@ -1,0 +1,48 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: absolute;
+  left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+}
+
+.circle {
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.link {
+  background-color: rgb(192, 192, 192);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a {
+  background-color: rgb(141, 255, 131);
+}
+
+.overview {
+  height: 100vh;
+  background-color: rgb(141, 255, 131);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 60%;
+}
+
