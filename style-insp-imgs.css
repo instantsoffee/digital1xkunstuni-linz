@@ -48,21 +48,38 @@ a {
 }
 
 .link-grid {
-  display: flex;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
   padding: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .link-card {
-  width: 16rem;
-  height: 20rem;
+  min-width: 12rem;
+  min-height: 18rem;
   background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.link-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.card-title {
+  position: absolute;
+  font-size: 2rem;
+}
+
+/* .a {
+  background-image: url("./imgs-insp/insp1.png");
+} */
+
 
 
 
