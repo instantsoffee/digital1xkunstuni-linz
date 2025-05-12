@@ -21,13 +21,41 @@ nav a {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 10px;
+  height: calc(100vh - 20px);
+  padding: 10px;
+}
+
+.color-link {
+  background-color: rgb(192, 192, 192);
+  border-radius: 20px;
 }
 
 .link {
-  background-color: rgb(192, 192, 192);
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+  font-size: 8rem;
+  text-decoration: none;
+  line-height: 0.6;
+  color: black;
+}
+
+.headline {
+  font-size: 10rem;
+  font-weight: bold;
+  display: flex;
+  line-height: 0.6;
+}
+
+.one, .three {
+  justify-content: flex-end;
+}
+
+.one, .four {
+  align-items: flex-end;
 }
 
 .a {
