@@ -43,6 +43,25 @@ nav a {
   color: black;
 }
 
+.overview {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a {
+  background-color: rgb(141, 255, 131);
+}
+
+.b {
+  background-color: rgb(131, 133, 255);
+}
+
+.container {
+  width: 60%;
+}
+
 .headline {
   font-size: 10rem;
   font-weight: bold;
@@ -56,28 +75,5 @@ nav a {
 
 .one, .four {
   align-items: flex-end;
-}
-
-.a {
-  background-color: rgb(141, 255, 131);
-}
-
-.overview {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.overview-a {
-  background-color: rgb(141, 255, 131);
-}
-
-.b {
-  background-color: rgb(131, 133, 255);
-}
-
-.container {
-  width: 60%;
 }
 
