@@ -2,11 +2,6 @@ html {
   font-size: calc(100vw / 800 * 10);
 }
 
-body {
-  height: 100vh;
-  position: relative;
-}
-
 .title {
   font-size: 15rem;
   font-weight: bold;
