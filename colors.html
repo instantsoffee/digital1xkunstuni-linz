@@ -4,59 +4,179 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Colors</title>
-  <link rel="stylesheet" href="style-colors.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 960px;
+      width: 100%;
+      padding: 24px;
+    }
+
+    .home-link {
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 12px;
+      text-decoration: underline;
+      color: #0000ee;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 64px;
+      margin: 24px 0;
+    }
+
+    .wheel {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto 40px;
+    }
+
+    .wheel .dot {
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      background: var(--clr);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform-origin: center center;
+    }
+
+    .wheel .dot:nth-child(1) { transform: rotate(0deg) translate(120px) rotate(0deg); --clr: #c80083; }
+    .wheel .dot:nth-child(2) { transform: rotate(30deg) translate(120px) rotate(-30deg); --clr: #ea0000; }
+    .wheel .dot:nth-child(3) { transform: rotate(60deg) translate(120px) rotate(-60deg); --clr: #ff6400; }
+    .wheel .dot:nth-child(4) { transform: rotate(90deg) translate(120px) rotate(-90deg); --clr: #ff8c00; }
+    .wheel .dot:nth-child(5) { transform: rotate(120deg) translate(120px) rotate(-120deg); --clr: #ffc400; }
+    .wheel .dot:nth-child(6) { transform: rotate(150deg) translate(120px) rotate(-150deg); --clr: #ffef00; }
+    .wheel .dot:nth-child(7) { transform: rotate(180deg) translate(120px) rotate(-180deg); --clr: #b7e000; }
+    .wheel .dot:nth-child(8) { transform: rotate(210deg) translate(120px) rotate(-210deg); --clr: #00892a; }
+    .wheel .dot:nth-child(9) { transform: rotate(240deg) translate(120px) rotate(-240deg); --clr: #0048a0; }
+    .wheel .dot:nth-child(10) { transform: rotate(270deg) translate(120px) rotate(-270deg); --clr: #4e2e8c; }
+    .wheel .dot:nth-child(11) { transform: rotate(300deg) translate(120px) rotate(-300deg); --clr: #5f006d; }
+    .wheel .dot:nth-child(12) { transform: rotate(330deg) translate(120px) rotate(-330deg); --clr: #4e2e8c; }
+
+    .text-block {
+      display: flex;
+      align-items: center;
+      margin: 40px auto;
+      max-width: 700px;
+      font-size: 18px;
+      line-height: 1.4;
+      gap: 20px;
+    }
+
+    .text-block .dot {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #c80083;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 60px;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    .link-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .link-item .dot {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--clr);
+    }
+
+    .link-item a {
+      text-decoration: underline;
+      color: black;
+      transition: color 0.3s;
+    }
+
+    .link-item:nth-child(1):hover a { color: #c80083; }
+    .link-item:nth-child(2):hover a { color: #ea0000; }
+    .link-item:nth-child(3):hover a { color: #ff6400; }
+    .link-item:nth-child(4):hover a { color: #ff8c00; }
+    .link-item:nth-child(5):hover a { color: #ffc400; }
+    .link-item:nth-child(6):hover a { color: #ffef00; }
+    .link-item:nth-child(7):hover a { color: #b7e000; }
+    .link-item:nth-child(8):hover a { color: #00892a; }
+    .link-item:nth-child(9):hover a { color: #0048a0; }
+    .link-item:nth-child(10):hover a { color: #4e2e8c; }
+    .link-item:nth-child(11):hover a { color: #5f006d; }
+    .link-item:nth-child(12):hover a { color: #4e2e8c; }
+
+    @media (max-width: 600px) {
+      .links {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">
-      ⇦
-    </a>
-  </nav>
-  <section class="circle">
-    <div class="color-link a">
-      <a href="#a" class="link">1</a>
-    </div>
-    <div class="color-link b">
-      <a href="#b" class="link">2</a>
-    </div>
-    <div class="color-link c"><a href="#" class="link">3</a></div>
-    <div class="color-link d"><a href="#" class="link">4</a></div>
-    <div class="color-link e"><a href="#" class="link">5</a></div>
-    <div class="headline one">Co</div>
-    <div class="headline two">lo</div>
-    <div class="color-link f"><a href="#" class="link">6</a></div>
-    <div class="color-link g"><a href="#" class="link">7</a></div>
-    <div class="headline three">r</div>
-    <div class="headline four">s</div>
-    <div class="color-link h"><a href="#" class="link">8</a></div>
-    <div class="color-link i"><a href="#" class="link">9</a></div>
-    <div class="color-link j"><a href="#" class="link">10</a></div>
-    <div class="color-link k"><a href="#" class="link">11</a></div>
-    <div class="color-link l"><a href="#" class="link">12</a></div>
-  </section>
+  <div class="container">
+    <a href="/" class="home-link">Home</a>
+    <h1>COLORS</h1>
 
-  <section class="overview a" id="a">
-    <div class="container">
-      <p>
-        Colors are a powerful tool in web design, influencing user emotions and perceptions. They can enhance usability, create visual hierarchy, and establish brand identity. Understanding color theory, including the color wheel, complementary colors, and color harmony, is essential for effective design.
-      </p>
-      <p>
-        By using color strategically, designers can guide users' attention, evoke specific feelings, and improve overall user experience.
-      </p>
-      <a href="#" target="_blank">Link to resource</a> <a href="#">Go back up</a>
+    <div class="wheel">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
     </div>
-  </section>
-  
-  <section class="overview b" id="b">
-    <div class="container">
+
+    <div class="text-block">
+      <div class="dot"></div>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores tenetur dicta debitis eligendi nihil architecto accusamus qui fugit, quasi quo dolorum ex ipsam aliquam odit earum dolores cum voluptatum. Commodi!
+        Colors are a vital part of web design, shaping the mood, guiding attention, and reinforcing brand identity. A thoughtful color palette enhances readability, accessibility, and emotional impact. When used effectively, colors can create visual harmony, improve user experience, and make a website more memorable and engaging.
       </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, laudantium!
-      </p>
-      <a href="#" target="_blank">Link to resource</a> <a href="#">Go back up</a>
     </div>
-  </section>
+
+    <div class="links">
+      <div class="link-item"><div class="dot" style="--clr:#c80083"></div><a href="#">https://randoma11y.com</a></div>
+      <div class="link-item"><div class="dot" style="--clr:#ea0000"></div><a href="#">https://coolors.co/</a></div>
+      <div class="link-item"><div class="dot" style="--clr:#ff6400"></div><a href="#">https://foundcolor.co/</a></div>
+      <div class="link-item"><div class="dot" style="--clr:#ff8c00"></div><a href="#">https://raphaelbastide.com/salmon-olive/</a></div>
+      <div class="link-item"><div class="dot" style="--clr:#ffc400"></div><a href="#">https://www.figma.com/color-palette-generator/</a></div>
+      <div class="link-item"><div class="dot" style="--clr:#ffef00"></div><a href="#">https://color.adobe.com/create/color-wheel</a></div>
+      <div class="link-item"><div class="dot" style="--clr:#b7e000"></div><a href="#">https://paletton.com/</a></div>
+      <div class="link-item"><div class="dot" style="--clr:#00892a"></div><a href="#">https://app.contrast-finder.org/#color-a11y</a></div>
+      <div class="link-item"><div class="dot" style="--clr:#0048a0"></div><a href="#">https://contrast-triangle.com/</a></div>
+      <div class="link-item"><div class="dot" style="--clr:#4e2e8c"></div><a href="#">https://colorable.jxnblk.com/</a></div>
+      <div class="link-item"><div class="dot" style="--clr:#5f006d"></div><a href="#">https://colorlibrary.ch/</a></div>
+      <div class="link-item"><div class="dot" style="--clr:#4e2e8c"></div><a href="#">https://meshgradient.com//</a></div>
+    </div>
+
+    <div class="text-block">
+      <p>
+        Ultimately, color in web design is not just about aesthetics — it’s a powerful tool for communication. From signaling interactive elements to evoking emotions and guiding users through a page, color choices influence how people perceive and interact with a website. Understanding color theory, contrast, and accessibility standards is essential for creating designs that are both beautiful and inclusive.
+      </p>
+    </div>
+  </div>
 </body>
 </html>

@@ -4,6 +4,7 @@ html {
 
 html, body {
   margin: 0;
+  background-color: rgba(75, 136, 250, 0.755);
 }
 
 .parent {
@@ -21,10 +22,13 @@ html, body {
 }
 
 .pool {
-  background-color: rgb(207, 207, 207);
+  background-color: rgb(141, 211, 255);
+  color: floralwhite;
   height: 100%;
   width: 100%;
   border-radius: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,18 +42,21 @@ nav {
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 3rem;
 }
 
 .link a {
   font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .collection {
   font-size: 1.8rem;
   line-height: 0.8;
   letter-spacing: -1px;
+  color: ghostwhite;
 }
   
 .div1 {

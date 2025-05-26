@@ -8,6 +8,8 @@ body {
 
 .container {
   display: flex;
+  height: 100vh;
+  overflow: hidden; /* Prevent page scrolling */
 }
 
 nav {
@@ -17,11 +19,25 @@ nav {
 
 a {
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  color:blue;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 9rem;
 }
 
 .item {
   flex: 1;
   min-height: 100vh;
+}
+
+.inspiration,
+.images {
+  width: 50%;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .inspiration {
@@ -35,19 +51,24 @@ a {
 }
 
 .title {
-  font-size: 6rem;
+  font-size: 5rem;
   margin-top: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
 }
 
 .title-a {
   border-top: 1px solid black;
-  padding-left: 3rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
 }
 
 .title-b {
   border-top: 1px solid white;
-  padding-left: 8rem;
+  text-align: end;
+  padding-right: 2rem;
+  padding-top: 1rem;
 }
 
 .link-grid {
@@ -59,13 +80,13 @@ a {
 }
 
 .link-card {
-  min-width: 12rem;
-  min-height: 18rem;
-  background-color: grey;
+  position: relative;
   display: flex;
+  align-items: flex-end;
   justify-content: center;
-  align-items: center;
+  overflow: hidden;
 }
+
 
 .link-card img {
   width: 100%;
@@ -76,8 +97,7 @@ a {
 
 .card-title {
   position: absolute;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
-
 
 
